@@ -1,0 +1,145 @@
+#main-nav {
+  position: sticky;
+  top: 0;
+  right: 0;
+}
+
+#main-nav .container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#main-nav .container ul {
+  justify-self: start;
+  justify-content: start;
+  margin: 0;
+}
+
+#showcase .showcase-content p {
+  width: 60%;
+  font-size: 1.1rem;
+  font-weight: bolder;
+}
+
+#home-articles .articles-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.5rem;
+}
+
+#home-articles .articles-container .card {
+  margin-bottom: 0 !important;
+}
+
+#home-articles .articles-container .card p {
+  margin: 1rem 0;
+}
+
+#home-articles .articles-container .card:first-child {
+  grid-column: 1 / span 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+#home-articles .articles-container .card:last-child {
+  grid-column: 2 / span 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+#main-footer {
+  margin-top: 3rem;
+}
+
+#main-footer .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5rem;
+}
+
+#main-footer .container>div:nth-child(odd) {
+  border: none;
+}
+
+#main-footer .container>div:last-child {
+  grid-column: 1 / 5;
+}
+
+/* about */
+
+#about .container {
+  padding: 4rem 0;
+}
+
+#about .page-container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 10rem;
+}
+
+#about .page-container .about-card {
+  padding: 3rem 3rem;
+  border-radius: 10px;
+  font-size: 1.1rem;
+}
+
+
+#about .page-container .about-card h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+#about .page-container .about-card:first-child {
+  background-color: #fff;
+}
+
+#about .page-container .about-card:last-child {
+  width: 100%;
+  padding: 3rem;
+  align-self: start;
+}
+
+#about .page-container .about-card:last-child p {
+  margin: 1rem 0 2rem 0;
+}
+
+
+/* article */
+
+#article .container .page-container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap:3.5rem;
+}
+
+#article .container .page-container .card {
+  padding: 2rem 3rem;
+}
+
+#article .container .page-container .card:nth-child(1) {
+  grid-row: 1 / 4;
+}
+
+#article .container .page-container .card:nth-child(2) {
+  margin-bottom: 0;
+}
+
+
+#article .container .page-container .card:nth-child(3) {
+  grid-row: 2 / 3;
+}
+
+
+#article #categories {
+  align-self: start;
+}
+
+#article .subscription {
+  align-self: start;
+  grid-column: 2 / 3;
+}
